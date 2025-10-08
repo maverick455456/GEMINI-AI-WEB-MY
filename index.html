@@ -3,60 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NIPU EDITE'S 💜</title>
+  <title>MR NIPUN OFC</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ff66cc, #8e2de2);
+      background: radial-gradient(circle at top left, #8e2de2, #ff66cc);
       color: white;
-      text-align: center;
+      overflow-x: hidden;
     }
+
     header {
-      padding: 60px 0 30px;
-    }
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-      text-shadow: 2px 2px 5px #000;
-    }
-    h2 {
-      font-weight: 500;
-      color: #ffd6ff;
-      margin-top: 10px;
-    }
-    main {
-      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(10px);
-      width: 80%;
-      margin: 30px auto;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff66cc;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .prompts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
       padding: 30px;
-      border-radius: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
     footer {
-      background: #5a189a;
-      padding: 15px;
-      border-radius: 25px 25px 0 0;
       margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background: linear-gradient(90deg, #ff66cc, #8e2de2);
+      color: white;
+      border-radius: 20px 20px 0 0;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>NIPU EDITE'S 💜</h1>
-    <h2>🩷 Trending Gemini AI Prompt Web 🩷</h2>
+    <div class="logo">💜 MR NIPUN OFC</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <h3>🔥 Latest Prompts</h3>
-    <p>✅ Add your photo + copy prompt 👉 Get amazing AI results with Gemini!<br><br>
-    💫 Example Prompt:<br>“A cinematic portrait of a person with soft natural light, ultra realistic.”</p>
-  </main>
+  <section class="hero">
+    <h1>🔥 Trending Gemini Prompts 🔥</h1>
+    <p>Discover latest AI photo prompts by MR NIPUN OFC 🩷</p>
+  </section>
+
+  <section class="prompts">
+    <div class="card">
+      <img src="https://i.ibb.co/3B4g6zH/sample1.jpg" alt="prompt1">
+      <p>“Ultra realistic cinematic portrait with soft lighting.”</p>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/jgX1gjx/sample2.jpg" alt="prompt2">
+      <p>“Mystic neon glow portrait with purple tones.”</p>
+    </div>
+  </section>
 
   <footer>
-    © MR NIPUN OFC 💜 | Created by NIPU EDITE’S
+    © 2025 MR NIPUN OFC | Built with ❤️ | Smooth • Fast • Glassy
   </footer>
 </body>
 </html>
