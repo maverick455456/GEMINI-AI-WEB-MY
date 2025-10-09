@@ -3,39 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NIPU EDITES</title>
+  <meta property="og:image" content="about.jpg" />
+  <title>Nipu Edites | Home</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="logo" onclick="window.location.href='about.html'">NIPU EDITES</div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <nav class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
+    <div class="logo" onclick="window.location.href='/'">Nipu Edites</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div id="navLinks" class="nav-links">
+      <a href="/">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-    </nav>
+    </div>
   </header>
 
-  <section class="hero">
+  <section class="home">
     <h1>🔥 Trending Gemini Prompts 🔥</h1>
-    <p>Explore the latest AI prompt ideas and photo inspiration by MR NIPUN OFC</p>
-  </section>
 
-  <section class="cards">
-    <div class="card">
-      <img src="https://i.ibb.co/3B4g6zH/sample1.jpg" alt="AI Prompt 1" />
-      <p>“Cinematic lighting portrait with warm tones.”</p>
+    <div class="prompt-card">
+      <img src="prompt1.jpg" alt="Gemini Prompt Image" />
+      <p>"Ultra realistic cinematic photo of glowing cyberpunk city with neon reflections."</p>
+      <button onclick="copyPrompt(this)">Copy Prompt</button>
     </div>
-    <div class="card">
-      <img src="https://i.ibb.co/jgX1gjx/sample2.jpg" alt="AI Prompt 2" />
-      <p>“Neon red glow portrait with glass reflection.”</p>
+
+    <div class="prompt-card">
+      <img src="prompt2.jpg" alt="Prompt Image" />
+      <p>"Dreamy portrait with soft light and misty pink-blue tones."</p>
+      <button onclick="copyPrompt(this)">Copy Prompt</button>
     </div>
   </section>
 
   <footer>
-    © 2025 MR NIPUN OFC | Built with ❤️ by NIPU EDITES
+    <div class="ribbon">© 2025 MR NIPUN OFC | Built with ❤️ by MR NIPUN OFC</div>
   </footer>
 </body>
-</html>
+  </html>
