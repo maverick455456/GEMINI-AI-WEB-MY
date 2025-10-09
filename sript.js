@@ -1,6 +1,6 @@
 function toggleMenu() {
   const nav = document.getElementById('navLinks');
-  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  nav.classList.toggle('show');
 }
 
 function copyPrompt(button) {
