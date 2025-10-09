@@ -1,16 +1,60 @@
-/* Navigation fix */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #2b003d, #ff003c);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ff99cc;
+  transition: 0.3s;
+}
+.logo:hover {
+  text-shadow: 0 0 10px #ff004c;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Navigation */
 .nav-links {
   display: none;
   flex-direction: column;
-  background: rgba(0,0,0,0.9);
   position: absolute;
   top: 60px;
-  right: 10px;
+  right: 15px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
+  text-align: right;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
   opacity: 0;
   transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links.show {
@@ -21,12 +65,88 @@
 
 .nav-links a {
   color: white;
-  padding: 12px;
+  padding: 12px 15px;
   text-decoration: none;
   border-bottom: 1px solid #ff99cc;
   transition: 0.2s;
 }
-
 .nav-links a:hover {
   background: #ff004c;
 }
+
+/* Home Section */
+.home {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.prompt-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+.prompt-card:hover {
+  transform: scale(1.02);
+}
+.prompt-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.prompt-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #ff004c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.prompt-card button:hover {
+  background: #ff3366;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+}
+.owner-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ff004c;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+.whatsapp {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #25D366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* Footer */
+footer .ribbon {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  }
