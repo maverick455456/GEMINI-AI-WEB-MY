@@ -1,38 +1,4 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  background: linear-gradient(135deg, #3a0066, #ff004c);
-  background-attachment: fixed;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #ff99cc;
-  transition: 0.3s;
-}
-.logo:hover {
-  text-shadow: 0 0 10px #ff004c;
-}
-
-.menu-icon {
-  font-size: 25px;
-  cursor: pointer;
-}
-
+/* Navigation fix */
 .nav-links {
   display: none;
   flex-direction: column;
@@ -42,7 +8,17 @@ header {
   right: 10px;
   border-radius: 10px;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
 }
+
+.nav-links.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .nav-links a {
   color: white;
   padding: 12px;
@@ -50,58 +26,7 @@ header {
   border-bottom: 1px solid #ff99cc;
   transition: 0.2s;
 }
+
 .nav-links a:hover {
   background: #ff004c;
-}
-
-.home, .about, .contact {
-  padding: 30px;
-  text-align: center;
-}
-
-.prompt-card {
-  background: rgba(255,255,255,0.1);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  backdrop-filter: blur(10px);
-}
-.prompt-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-.prompt-card button {
-  margin-top: 10px;
-  padding: 8px 15px;
-  background: #ff004c;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-}
-
-.owner-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #ff004c;
-  margin-bottom: 15px;
-}
-
-.whatsapp {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #25D366;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer .ribbon {
-  text-align: center;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.7);
-  font-size: 14px;
 }
